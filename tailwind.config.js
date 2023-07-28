@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -65,12 +65,41 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
+          "50%": { opacity: 1 },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: 0,
+          },
+        },
+        particle: {
+          "0%": { transform: "translateX(0) translateY(0px)", opacity: 1 },
+          "25%": {
+            opacity: 1,
+            transform: "translateX(-5px) translateY(5px)",
+          },
+          "50%": {
+            opacity: 1,
+            transform: "translateX(0px) translateY(10px)",
+          },
+          "75%": {
+            opacity: 1,
+            transform: "translateX(5px) translateY(5px)",
+          },
+          "100%": {
+            transform: "translateX(0px) translateY(0px)",
+            opacity: 1,
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        meteor: "meteor 5s infinite linear",
+        particle: "particle 5s infinite linear",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

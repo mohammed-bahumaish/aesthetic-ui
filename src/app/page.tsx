@@ -1,7 +1,7 @@
 import { Card } from "@/components/aesthetics/card";
 import { ColoredBorder } from "@/components/aesthetics/colored-border";
 import { Dots } from "@/components/aesthetics/dots";
-import { Grainy } from "@/components/aesthetics/grainy-patteren";
+import { Grainy } from "@/components/aesthetics/grainy";
 import { Grids } from "@/components/aesthetics/grids";
 import { LinearGradient } from "@/components/aesthetics/linear-gradient";
 import { Meteors } from "@/components/aesthetics/meteors";
@@ -25,7 +25,7 @@ export default function Home() {
           <ColoredBorder />
         </a>
         <a
-          href="https://github.com/mohammed-bahumaish/aesthetic-ui/blob/main/src/components/aesthetics/grainy-patteren.tsx"
+          href="https://github.com/mohammed-bahumaish/aesthetic-ui/blob/main/src/components/aesthetics/grainy.tsx"
           className="flex justify-center items-center"
         >
           <Grainy />

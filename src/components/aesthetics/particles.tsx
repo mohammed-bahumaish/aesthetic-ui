@@ -9,9 +9,10 @@ export const Particles = () => {
   return (
     <CardContainer>
       <div className="border rounded-lg h-full w-full relative flex justify-center items-center bg-background overflow-hidden ">
-        {Array.from(".".repeat(20)).map(() => {
+        {Array.from(".".repeat(20)).map((_, i) => {
           return (
             <span
+              key={i}
               className={cn(
                 "absolute h-0.5 w-0.5 rotate-[215deg] animate-particle rounded-[9999px] bg-slate-500 shadow-[0_0_0_1px_#ffffff10]"
               )}

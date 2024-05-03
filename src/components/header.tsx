@@ -28,7 +28,7 @@ export const Header = () => {
     <header className="fixed top-0 left-0 z-50 w-full border-b border-transparent-white backdrop-blur-[12px] h-12 flex">
       <div className="flex items-center container">
         <Link className="text-md" href="/">
-          Aesthatic UI
+          Aesthetic UI
         </Link>
       </div>
     </header>
